@@ -1,4 +1,4 @@
-![Astro](image.png#center)
+![Astro](image.png)(#center)
 
 Comenzando con Astro
 
@@ -9,14 +9,23 @@ pnpm create astro@latest
 Dentro de tu proyecto Astro, verás las siguientes carpetas y archivos:
 
 ├── public/
+
 ├── src/
+
 │   ├── components/
+
 │   ├── content/
+
 │   ├── layouts/
+
 │   └── pages/
+
 ├── astro.config.mjs
+
 ├── README.md
+
 ├── package.json
+
 └── tsconfig.json
 
 Astro busca archivos .astro o .md en el directorio src/pages/. Cada página se expone como una ruta basada en su nombre de archivo.
