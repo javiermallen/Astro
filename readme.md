@@ -9,17 +9,8 @@ pnpm create astro@latest
 🚀 Estructura básica de un proyecto
 
 Dentro de tu proyecto Astro, verás las siguientes carpetas y archivos:
+![Estructura de carpetas y archivos](https://github.com/user-attachments/assets/019aa508-b66a-4f19-8f44-4daa95468a0a)
 
-├── public/
-├── src/
-│   ├── components/
-│   ├── content/
-│   ├── layouts/
-│   └── pages/
-├── astro.config.mjs
-├── README.md
-├── package.json
-└── tsconfig.json
 
 Astro busca archivos .astro o .md en el directorio src/pages/. Cada página se expone como una ruta basada en su nombre de archivo.
 En la carpeta src/components/, es donde se suelen poner los componente de Astro/React/Vue/Svelte/Preact.
