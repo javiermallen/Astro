@@ -1,4 +1,4 @@
-| ![Astro](https://avatars.githubusercontent.com/u/44914786?s=200&v=4) | 
+![Astro](https://avatars.githubusercontent.com/u/44914786?s=200&v=4){ width="800" height="600" style="display: block; margin: 0 auto" }
 
 Comenzando con Astro
 
