@@ -1,9 +1,8 @@
 <p align="center">
   <img src="https://avatars.githubusercontent.com/u/44914786?s=200&v=4" alt="Astro">
 </p>
-![Astro](https://avatars.githubusercontent.com/u/44914786?s=200&v=4){ width="800" height="600" style="display: block; margin: 0 auto" }
 
-Comenzando con Astro
+🎯 Comenzando con Astro
 
 pnpm create astro@latest 
 
@@ -12,23 +11,14 @@ pnpm create astro@latest
 Dentro de tu proyecto Astro, verás las siguientes carpetas y archivos:
 
 ├── public/
-
 ├── src/
-
 │   ├── components/
-
 │   ├── content/
-
 │   ├── layouts/
-
 │   └── pages/
-
 ├── astro.config.mjs
-
 ├── README.md
-
 ├── package.json
-
 └── tsconfig.json
 
 Astro busca archivos .astro o .md en el directorio src/pages/. Cada página se expone como una ruta basada en su nombre de archivo.
