@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="460" src="https://picsum.photos/460/300](https://avatars.githubusercontent.com/u/44914786?s=200&v=4" alt="Astro">
+  <img src="https://avatars.githubusercontent.com/u/44914786?s=200&v=4" alt="Astro">
 </p>
 ![Astro](https://avatars.githubusercontent.com/u/44914786?s=200&v=4){ width="800" height="600" style="display: block; margin: 0 auto" }
 
