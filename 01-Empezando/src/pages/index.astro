@@ -1,0 +1,17 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+---
+
+<MainLayout title = "Inicio">
+	<h1>Hola mundo</h1>
+	<footer>
+		<p id="horaReal">
+
+		</p>
+	</footer>
+	<script>
+		const horaActual = new Date().toLocaleTimeString();
+		const horaReal = document.getElementById('horaReal') as HTMLParagraphElement;
+		horaReal.innerText = `La hora es ${horaActual}`;
+	</script>
+</MainLayout>

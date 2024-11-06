@@ -1,0 +1,25 @@
+---
+import ViewTransitions from "astro/components/ViewTransitions.astro";
+import NavPage from "../components/NavPage.astro";
+
+
+import "../styles/global.css"
+
+const { title } = Astro.props;
+
+---
+
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <title>{ title }</title>
+
+        <ViewTransitions />
+    </head>
+	<body>
+		<NavPage/>
+		<slot />
+	</body>
+</html>
