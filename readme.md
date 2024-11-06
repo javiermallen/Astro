@@ -1,4 +1,4 @@
-![Astro](https://avatars.githubusercontent.com/u/44914786?s=200&v=4#center)  
+| ![Astro]([https://picsum.photos/1024/400](https://avatars.githubusercontent.com/u/44914786?s=200&v=4) | 
 
 Comenzando con Astro
 
