@@ -9,6 +9,7 @@ pnpm create astro@latest
 🚀 Estructura básica de un proyecto
 
 Dentro de tu proyecto Astro, verás las siguientes carpetas y archivos:
+
 ![Estructura de carpetas y archivos](https://github.com/user-attachments/assets/019aa508-b66a-4f19-8f44-4daa95468a0a)
 
 
