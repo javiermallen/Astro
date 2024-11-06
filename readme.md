@@ -1,4 +1,4 @@
-![Astro](image.png)
+![Astro](image.png#center)
 
 Comenzando con Astro
 
@@ -8,13 +8,12 @@ pnpm create astro@latest
 
 Dentro de tu proyecto Astro, verás las siguientes carpetas y archivos:
 
-
 ├── public/
 ├── src/
-│   ├── components/
-│   ├── content/
-│   ├── layouts/
-│   └── pages/
+│   ├── components/
+│   ├── content/
+│   ├── layouts/
+│   └── pages/
 ├── astro.config.mjs
 ├── README.md
 ├── package.json
@@ -28,14 +27,15 @@ Cualquier activo estático, como imágenes, puede colocarse en el directorio pub
 🧞 Comandos
 
 Todos los comandos se ejecutan desde la raíz del proyecto, desde un terminal:
-Comando 	Acción
-pnpm install 	Instalar dependencias.
-pnpm run dev 	Inicia un servidor local de desarroollo en
- localhost:4321
-pnpm run build 	Construye el sitio en producción en la carpeta ./dist/
-pnpm run preview 	PPrevisualiza tu compilación localmente, antes de desplegarla
-pnpm run astro ...  Ejecuta comandos CLI como astro add, astro check
-pnpm run astro -- --help Obtener ayuda sobre el uso de Astro CLI
+
+| Comando                   | Acción                                                        |
+|---------------------------|---------------------------------------------------------------|
+| pnpm install              | Instalar dependencias.                                        |
+| pnpm run dev              | Inicia un servidor local de desarroollo en localhost:4321     |
+| pnpm run build            | Construye el sitio en producción en la carpeta ./dist/        |
+| pnpm run preview          | PPrevisualiza tu compilación localmente, antes de desplegarla |
+| pnpm run astro ...        | Ejecuta comandos CLI como astro add, astro check              |
+| pnpm run astro -- --help  | Obtener ayuda sobre el uso de Astro CLI                       |
 
 👀 ¿Quieres saber más?
 
