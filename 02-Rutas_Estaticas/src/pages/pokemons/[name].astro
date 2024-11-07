@@ -1,20 +1,29 @@
 ---
 import type { GetStaticPaths } from "astro";
 import MainLayout from "../../layouts/MainLayout.astro";
+import Cards from "../../components/Cards.astro";
 
 export const getStaticPaths = (() => {
     return [
-        {params: {name: 'bulbasaur'}},
-        {params: {name: 'rover'}},
-        {params: {name: 'spot'}},
+        {
+            params: {name: 'bulbasaur'},
+            props:{ url: 'https://pokeapi.co/api/v2/pokemon/1/', name: 'bulbasaur'}
+        },
+        {
+            params: {name: 'charizard'},
+            props:{ url: 'https://pokeapi.co/api/v2/pokemon/6/', name: 'charizard'}},
     ];
 }) satisfies GetStaticPaths;
 
 const {name} = Astro.params
-
+const {url} = Astro.props
 ---
 
 <MainLayout title="Página">
-    <h1 class="text-3xl text-center underline">{ name }</h1>
+    <h1 class="text-3xl text-center underline capitalize">{ name }</h1>
+    <Cards name={name} url={url}/>
+    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+        <a href="/">Atrás</a>
+    </button>
 
 </MainLayout>

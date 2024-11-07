@@ -7,9 +7,9 @@ const { url, name } = Astro.props
 const id = url.slice( -2, -1 )
 const imgSrc = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/${ id }.png`
 ---
-<a class="rounded border flex flex-col justify-center items-center p-2º" href=`../pages/pokemons/${name}.astro`>
+<a class="rounded border flex flex-col justify-center items-center p-2º" href={`/pokemons/${name}`}>
     <img src={ imgSrc } alt={ name }>
-    <p>{ name }</p>
+    <p class="capitalize">{ name }</p>
 </a>
 
 
