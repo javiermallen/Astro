@@ -1,0 +1,3 @@
+[submodule "02-Pokemon-static"]
+	path = 02-Pokemon-static
+	url = https://github.com/javiermallen/Astro.git
