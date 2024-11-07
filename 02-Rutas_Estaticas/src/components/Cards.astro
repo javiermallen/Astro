@@ -1,0 +1,15 @@
+---
+const { url, name } = Astro.props
+
+//De la soruce extraigo el número de pokemon para pasarselo a la dirección de la imagen
+//https://pokeapi.co/api/v2/pokemon/1/"
+//https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/1.png
+const id = url.slice( -2, -1 )
+const imgSrc = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/${ id }.png`
+---
+<a class="rounded border flex flex-col justify-center items-center p-2º" href=`../pages/pokemons/${name}.astro`>
+    <img src={ imgSrc } alt={ name }>
+    <p>{ name }</p>
+</a>
+
+
