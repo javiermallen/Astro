@@ -1,15 +1,34 @@
 ---
-const { url, name } = Astro.props
+const { name, url, isBig = false } = Astro.props
 
 //De la soruce extraigo el número de pokemon para pasarselo a la dirección de la imagen
 //https://pokeapi.co/api/v2/pokemon/1/"
 //https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/1.png
-const id = url.slice( -2, -1 )
+const id = url.split( '/').at( -2 )
 const imgSrc = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/${ id }.png`
 ---
-<a class="rounded border flex flex-col justify-center items-center p-2º" href={`/pokemons/${name}`}>
-    <img src={ imgSrc } alt={ name }>
-    <p class="capitalize">{ name }</p>
+<a class:list={[`
+                rounded flex flex-col justify-center items-center p-2`,
+                {
+                    border: !isBig,
+                },
+                ]} href={`/pokemons/${name}`}>
+    <img 
+        transition:name={`${name}-image`}    
+        class:list={[
+        {
+            'w-26 h-26': isBig,
+            'w-16 h-16': !isBig,
+        }
+    ]} 
+    src={ imgSrc } alt={ name }>
+    <p class:list={[
+        'capitalize',
+        {
+            'text-4xl': isBig,
+        }
+
+    ]}> #{ id } { name }</p>
 </a>
 
 
